@@ -1,3 +1,5 @@
+__authors__ = "Lucy Hisey, Jad Nammari, Daniel Macha, Thoan Nguyen"
+
 # from tf_keras.layers import Conv2D, MaxPool2D
 # from tf_keras import Input, Model
 # NOTE: If running on your local machine instead of BLT, comment out the two lines below and uncomment the two above.
@@ -18,7 +20,6 @@ tiles = [31, 32, 33, 34, 35, 77, 78, 79, 80, 81, 110, 111, 125, 126, 156, 157, 1
 seed(0)
 shuffle(tiles)
 
-# Break into training, validation, and testing sets
 n = len(tiles)
 train_tiles = tiles[:int(n * 0.6)]
 valid_tiles = tiles[int(n * 0.6):int(n * 0.8)]
@@ -28,8 +29,52 @@ test_tiles = tiles[int(n * 0.8):]
 train_gen = BatchGenerator(train_tiles, '/home/drake/lidar/lidar_chm', '/home/drake/lidar/lidar_tag', batch_size=BATCH_SIZE)
 valid_gen = BatchGenerator(valid_tiles, '/home/drake/lidar/lidar_chm', '/home/drake/lidar/lidar_tag', batch_size=BATCH_SIZE)
 
-# Define model
-# TODO You have to define your model!
+# Import additional layers needed for the model
+from tensorflow.keras.layers import Lambda, UpSampling2D, Reshape
+
+# input layer
+inputs = Input(shape=(1000, 1000, 1))
+
+# normalize input 0-255 -> 0-1
+x = Lambda(lambda img: img / 255.0)(inputs)
+
+# encoding: shrink pic, extract features (to detect building patterns at multiple scales)
+
+# small scale (individual pixels, smaller details): 1000x1000 -> 500x500
+x = Conv2D(32, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+x = Conv2D(32, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+x = MaxPool2D(2)(x)  # Shrink to 500x500
+
+# medium scale (edges, corners of buildings): 500x500 -> 250x250
+x = Conv2D(64, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+x = Conv2D(64, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+x = MaxPool2D(2)(x)  # Shrink to 250x250
+
+# large scale (entire buildings): 250x250 -> 125x125
+x = Conv2D(128, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+x = Conv2D(128, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+x = MaxPool2D(2)(x)  # Shrink to 125x125
+
+# decoding: grow pic back to og size (rebuild spatial info)
+
+# 125x125 -> 250x250
+x = UpSampling2D(2)(x)  # double size back up
+# refining
+x = Conv2D(64, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+x = Conv2D(64, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+
+# 250x250 -> 500x500
+x = UpSampling2D(2)(x)
+x = Conv2D(32, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+x = Conv2D(32, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+
+# 500x500 -> 1000x1000
+x = UpSampling2D(2)(x)
+x = Conv2D(16, 3, activation="relu", padding="same", kernel_initializer="he_normal")(x)
+
+x = Conv2D(1, 1, activation="linear", padding="same")(x)
+outputs = Reshape((1000, 1000))(x)
+model = Model(inputs=inputs, outputs=outputs)
 
 # Compile model
 def weighted_loss(a, b):
@@ -56,15 +101,3 @@ for chm, tag in valid_gen:
     predict = model.predict(chm, verbose=0) > 0.5
     print(f'\nBatch {i}: {np.sum(predict)} predicted, {np.sum(tag)} actual')
     i += 1
-
-# Old code I was using to display images. As it is won't run on BLT because BLT has no GUI.
-# import matplotlib
-# matplotlib.use('TkAgg')
-# print(train_tiles)
-# train_gen = BatchGenerator(train_tiles, '../lidar_chm', '../lidar_tag', batch_size=BATCH_SIZE, scale_factor=1)
-# chm, tag = train_gen.__getitem__(0)
-# i = 4
-# plt.imshow(chm[i])
-# plt.show()
-# plt.imshow(predict[i])
-# plt.show()
