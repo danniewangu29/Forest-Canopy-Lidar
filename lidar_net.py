@@ -11,6 +11,10 @@ from functools import partial
 from random import shuffle, seed
 from BatchGenerator import BatchGenerator
 import numpy as np
+import matplotlib
+matplotlib.use("Agg")          # BLT-friendly, no GUI needed
+import matplotlib.pyplot as plt
+
 
 # Weirdly, this can be much higher running on my laptop than on BLT. It may have to do with the GPUs.
 BATCH_SIZE = 1
@@ -85,6 +89,30 @@ model.compile(optimizer='adam', loss=weighted_loss, metrics=['accuracy'])
 # Train model
 print('\nTRAINING')
 history = model.fit(train_gen, epochs=20, validation_data=valid_gen, verbose=2)
+
+def learning_curve(history, filename="learning_curve.png"):
+    # Creating a new figure
+    plt.figure(figsize=(8, 5))
+
+    # Plot loss
+    plt.plot(history.history["loss"], label="Loss")
+    plt.plot(history.history["val_loss"], label="Validation loss")
+    plt.plot(history.history["accuracy"], label="Accuracy")
+    plt.plot(history.history["val_accuracy"], label="Validation accuracy")
+    plt.xlabel("Epoch")
+    plt.ylabel("Loss / Accuracy")
+    plt.title("Learning Curve")
+    plt.grid(True)
+    plt.legend()
+
+    # Saving the file, BLT cannot display the plot
+    plt.tight_layout()
+    plt.savefig(filename)
+    plt.close()
+    print(f"\nSaved learning curve to {filename}")
+
+# actually save it
+learning_curve(history)
 
 # Test model
 # Uncomment this if you are done tweaking parameters and want to see how accurate your model is

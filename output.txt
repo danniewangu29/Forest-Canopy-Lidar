@@ -1,45 +1,47 @@
 
 TRAINING
 Epoch 1/20
-137/137 - 73s - 532ms/step - accuracy: 0.3618 - loss: 1.0841 - val_accuracy: 0.2914 - val_loss: 1.5325
+137/137 - 72s - 528ms/step - accuracy: 0.3050 - loss: 1.1970 - val_accuracy: 0.2298 - val_loss: 0.8102
 Epoch 2/20
-137/137 - 26s - 191ms/step - accuracy: 0.3163 - loss: 2.3502 - val_accuracy: 0.0112 - val_loss: 1.1064
+137/137 - 24s - 177ms/step - accuracy: 0.2973 - loss: 0.8016 - val_accuracy: 0.1774 - val_loss: 0.9225
 Epoch 3/20
-137/137 - 25s - 184ms/step - accuracy: 0.1479 - loss: 0.8923 - val_accuracy: 0.2143 - val_loss: 0.8814
+137/137 - 26s - 192ms/step - accuracy: 0.2824 - loss: 0.9105 - val_accuracy: 0.1425 - val_loss: 1.0395
 Epoch 4/20
-137/137 - 27s - 196ms/step - accuracy: 0.2721 - loss: 1.0264 - val_accuracy: 0.2687 - val_loss: 0.8506
+137/137 - 29s - 211ms/step - accuracy: 0.1968 - loss: 1.1013 - val_accuracy: 0.4232 - val_loss: 0.9232
 Epoch 5/20
-137/137 - 26s - 186ms/step - accuracy: 0.2892 - loss: 0.8106 - val_accuracy: 0.0042 - val_loss: 0.9737
+137/137 - 26s - 191ms/step - accuracy: 0.1070 - loss: 2.5767 - val_accuracy: 4.5652e-04 - val_loss: 1.0169
 Epoch 6/20
-137/137 - 26s - 188ms/step - accuracy: 0.0501 - loss: 0.7590 - val_accuracy: 0.1844 - val_loss: 0.8360
+137/137 - 27s - 194ms/step - accuracy: 0.3179 - loss: 0.9110 - val_accuracy: 0.3911 - val_loss: 0.8801
 Epoch 7/20
-137/137 - 27s - 198ms/step - accuracy: 0.4676 - loss: 1.2664 - val_accuracy: 0.5492 - val_loss: 1.2716
+137/137 - 26s - 191ms/step - accuracy: 0.4563 - loss: 0.8583 - val_accuracy: 0.1589 - val_loss: 1.0530
 Epoch 8/20
-137/137 - 27s - 198ms/step - accuracy: 0.6290 - loss: 1.2361 - val_accuracy: 0.6009 - val_loss: 1.2696
+137/137 - 31s - 227ms/step - accuracy: 0.2042 - loss: 0.9031 - val_accuracy: 0.3050 - val_loss: 1.0127
 Epoch 9/20
-137/137 - 26s - 189ms/step - accuracy: 0.6553 - loss: 1.2339 - val_accuracy: 0.5405 - val_loss: 1.2680
+137/137 - 27s - 201ms/step - accuracy: 0.2903 - loss: 1.0961 - val_accuracy: 0.1839 - val_loss: 0.9634
 Epoch 10/20
-137/137 - 27s - 200ms/step - accuracy: 0.2916 - loss: 1.2348 - val_accuracy: 0.2260 - val_loss: 1.2665
+137/137 - 26s - 187ms/step - accuracy: 0.2593 - loss: 0.8080 - val_accuracy: 0.2223 - val_loss: 0.8385
 Epoch 11/20
-137/137 - 28s - 205ms/step - accuracy: 0.2115 - loss: 1.2302 - val_accuracy: 0.2318 - val_loss: 1.2653
+137/137 - 25s - 183ms/step - accuracy: 0.0434 - loss: 0.8781 - val_accuracy: 0.0151 - val_loss: 0.8854
 Epoch 12/20
-137/137 - 26s - 192ms/step - accuracy: 0.2133 - loss: 1.2287 - val_accuracy: 0.2693 - val_loss: 1.2644
+137/137 - 26s - 188ms/step - accuracy: 0.0907 - loss: 0.9546 - val_accuracy: 0.0631 - val_loss: 0.8148
 Epoch 13/20
-137/137 - 27s - 199ms/step - accuracy: 0.2562 - loss: 1.2270 - val_accuracy: 0.2302 - val_loss: 1.2634
+137/137 - 26s - 190ms/step - accuracy: 0.0680 - loss: 0.7398 - val_accuracy: 0.0597 - val_loss: 0.8121
 Epoch 14/20
-137/137 - 28s - 204ms/step - accuracy: 0.3033 - loss: 1.2258 - val_accuracy: 0.4284 - val_loss: 1.2626
+137/137 - 26s - 187ms/step - accuracy: 0.0545 - loss: 0.7382 - val_accuracy: 0.0485 - val_loss: 0.7697
 Epoch 15/20
-137/137 - 24s - 178ms/step - accuracy: 0.4843 - loss: 1.2249 - val_accuracy: 0.4288 - val_loss: 1.2619
+137/137 - 26s - 193ms/step - accuracy: 0.0732 - loss: 0.7551 - val_accuracy: 0.0991 - val_loss: 0.7667
 Epoch 16/20
-137/137 - 27s - 198ms/step - accuracy: 0.4957 - loss: 1.2239 - val_accuracy: 0.3816 - val_loss: 1.2613
+137/137 - 26s - 193ms/step - accuracy: 0.0885 - loss: 0.7235 - val_accuracy: 0.0878 - val_loss: 0.8479
 Epoch 17/20
-137/137 - 26s - 188ms/step - accuracy: 0.7120 - loss: 1.2232 - val_accuracy: 0.7879 - val_loss: 1.2609
+137/137 - 28s - 205ms/step - accuracy: 0.0646 - loss: 0.7648 - val_accuracy: 0.1318 - val_loss: 0.8095
 Epoch 18/20
-137/137 - 25s - 184ms/step - accuracy: 0.8305 - loss: 1.2225 - val_accuracy: 0.7879 - val_loss: 1.2604
+137/137 - 28s - 204ms/step - accuracy: 0.1071 - loss: 0.7343 - val_accuracy: 0.1076 - val_loss: 0.8116
 Epoch 19/20
-137/137 - 27s - 200ms/step - accuracy: 0.8305 - loss: 1.2217 - val_accuracy: 0.7880 - val_loss: 1.2600
+137/137 - 26s - 189ms/step - accuracy: 0.0628 - loss: 0.8148 - val_accuracy: 0.0918 - val_loss: 0.7567
 Epoch 20/20
-137/137 - 26s - 188ms/step - accuracy: 0.8306 - loss: 1.2210 - val_accuracy: 0.7880 - val_loss: 1.2596
+137/137 - 28s - 206ms/step - accuracy: 0.1350 - loss: 0.7868 - val_accuracy: 0.0855 - val_loss: 0.7659
+
+Saved learning curve to learning_curve.png
 
 Batch 0: 0 predicted, 0.0 actual
 
@@ -49,7 +51,7 @@ Batch 2: 0 predicted, 0.0 actual
 
 Batch 3: 0 predicted, 2185.0 actual
 
-Batch 4: 2 predicted, 1927.0 actual
+Batch 4: 0 predicted, 1927.0 actual
 
 Batch 5: 0 predicted, 52598.0 actual
 
@@ -115,7 +117,7 @@ Batch 35: 0 predicted, 35516.0 actual
 
 Batch 36: 0 predicted, 0.0 actual
 
-Batch 37: 2 predicted, 167852.0 actual
+Batch 37: 0 predicted, 167852.0 actual
 
 Batch 38: 0 predicted, 361.0 actual
 
