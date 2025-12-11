@@ -1,136 +1,46 @@
 
 TRAINING
 Epoch 1/20
-137/137 - 72s - 528ms/step - accuracy: 0.3050 - loss: 1.1970 - val_accuracy: 0.2298 - val_loss: 0.8102
+137/137 - 73s - 531ms/step - accuracy: 0.3567 - loss: 1.0087 - val_accuracy: 0.1813 - val_loss: 1.1905
 Epoch 2/20
-137/137 - 24s - 177ms/step - accuracy: 0.2973 - loss: 0.8016 - val_accuracy: 0.1774 - val_loss: 0.9225
+137/137 - 27s - 199ms/step - accuracy: 0.4613 - loss: 1.3051 - val_accuracy: 0.5398 - val_loss: 1.1777
 Epoch 3/20
-137/137 - 26s - 192ms/step - accuracy: 0.2824 - loss: 0.9105 - val_accuracy: 0.1425 - val_loss: 1.0395
+137/137 - 28s - 203ms/step - accuracy: 0.7168 - loss: 2.1520 - val_accuracy: 0.7889 - val_loss: 1.2659
 Epoch 4/20
-137/137 - 29s - 211ms/step - accuracy: 0.1968 - loss: 1.1013 - val_accuracy: 0.4232 - val_loss: 0.9232
+137/137 - 27s - 194ms/step - accuracy: 0.8317 - loss: 1.2300 - val_accuracy: 0.7890 - val_loss: 1.2653
 Epoch 5/20
-137/137 - 26s - 191ms/step - accuracy: 0.1070 - loss: 2.5767 - val_accuracy: 4.5652e-04 - val_loss: 1.0169
+137/137 - 27s - 199ms/step - accuracy: 0.8317 - loss: 1.2284 - val_accuracy: 0.7890 - val_loss: 1.2637
 Epoch 6/20
-137/137 - 27s - 194ms/step - accuracy: 0.3179 - loss: 0.9110 - val_accuracy: 0.3911 - val_loss: 0.8801
+137/137 - 27s - 197ms/step - accuracy: 0.8317 - loss: 1.2268 - val_accuracy: 0.7890 - val_loss: 1.2631
 Epoch 7/20
-137/137 - 26s - 191ms/step - accuracy: 0.4563 - loss: 0.8583 - val_accuracy: 0.1589 - val_loss: 1.0530
+137/137 - 26s - 191ms/step - accuracy: 0.8317 - loss: 1.2256 - val_accuracy: 0.7890 - val_loss: 1.2625
 Epoch 8/20
-137/137 - 31s - 227ms/step - accuracy: 0.2042 - loss: 0.9031 - val_accuracy: 0.3050 - val_loss: 1.0127
+137/137 - 28s - 202ms/step - accuracy: 0.8317 - loss: 1.2248 - val_accuracy: 0.7890 - val_loss: 1.2618
 Epoch 9/20
-137/137 - 27s - 201ms/step - accuracy: 0.2903 - loss: 1.0961 - val_accuracy: 0.1839 - val_loss: 0.9634
+137/137 - 27s - 196ms/step - accuracy: 0.8317 - loss: 1.2240 - val_accuracy: 0.7890 - val_loss: 1.2612
 Epoch 10/20
-137/137 - 26s - 187ms/step - accuracy: 0.2593 - loss: 0.8080 - val_accuracy: 0.2223 - val_loss: 0.8385
+137/137 - 27s - 194ms/step - accuracy: 0.8318 - loss: 1.2231 - val_accuracy: 0.7890 - val_loss: 1.2607
 Epoch 11/20
-137/137 - 25s - 183ms/step - accuracy: 0.0434 - loss: 0.8781 - val_accuracy: 0.0151 - val_loss: 0.8854
+137/137 - 28s - 202ms/step - accuracy: 0.8318 - loss: 1.2225 - val_accuracy: 0.7890 - val_loss: 1.2603
 Epoch 12/20
-137/137 - 26s - 188ms/step - accuracy: 0.0907 - loss: 0.9546 - val_accuracy: 0.0631 - val_loss: 0.8148
+137/137 - 27s - 195ms/step - accuracy: 0.8318 - loss: 1.2219 - val_accuracy: 0.7890 - val_loss: 1.2601
 Epoch 13/20
-137/137 - 26s - 190ms/step - accuracy: 0.0680 - loss: 0.7398 - val_accuracy: 0.0597 - val_loss: 0.8121
+137/137 - 26s - 192ms/step - accuracy: 0.8318 - loss: 1.2211 - val_accuracy: 0.7890 - val_loss: 1.2597
 Epoch 14/20
-137/137 - 26s - 187ms/step - accuracy: 0.0545 - loss: 0.7382 - val_accuracy: 0.0485 - val_loss: 0.7697
+137/137 - 27s - 197ms/step - accuracy: 0.8318 - loss: 1.2206 - val_accuracy: 0.7890 - val_loss: 1.2595
 Epoch 15/20
-137/137 - 26s - 193ms/step - accuracy: 0.0732 - loss: 0.7551 - val_accuracy: 0.0991 - val_loss: 0.7667
+137/137 - 28s - 202ms/step - accuracy: 0.8318 - loss: 1.2203 - val_accuracy: 0.7890 - val_loss: 1.2593
 Epoch 16/20
-137/137 - 26s - 193ms/step - accuracy: 0.0885 - loss: 0.7235 - val_accuracy: 0.0878 - val_loss: 0.8479
+137/137 - 26s - 192ms/step - accuracy: 0.8318 - loss: 1.2199 - val_accuracy: 0.7890 - val_loss: 1.2591
 Epoch 17/20
-137/137 - 28s - 205ms/step - accuracy: 0.0646 - loss: 0.7648 - val_accuracy: 0.1318 - val_loss: 0.8095
+137/137 - 27s - 201ms/step - accuracy: 0.8318 - loss: 1.2197 - val_accuracy: 0.7890 - val_loss: 1.2590
 Epoch 18/20
-137/137 - 28s - 204ms/step - accuracy: 0.1071 - loss: 0.7343 - val_accuracy: 0.1076 - val_loss: 0.8116
+137/137 - 27s - 194ms/step - accuracy: 0.8318 - loss: 1.2193 - val_accuracy: 0.7890 - val_loss: 1.2589
 Epoch 19/20
-137/137 - 26s - 189ms/step - accuracy: 0.0628 - loss: 0.8148 - val_accuracy: 0.0918 - val_loss: 0.7567
+137/137 - 26s - 193ms/step - accuracy: 0.8318 - loss: 1.2188 - val_accuracy: 0.7890 - val_loss: 1.2588
 Epoch 20/20
-137/137 - 28s - 206ms/step - accuracy: 0.1350 - loss: 0.7868 - val_accuracy: 0.0855 - val_loss: 0.7659
+137/137 - 28s - 202ms/step - accuracy: 0.8318 - loss: 1.2185 - val_accuracy: 0.7890 - val_loss: 1.2587
 
 Saved learning curve to learning_curve.png
 
-Batch 0: 0 predicted, 0.0 actual
-
-Batch 1: 0 predicted, 0.0 actual
-
-Batch 2: 0 predicted, 0.0 actual
-
-Batch 3: 0 predicted, 2185.0 actual
-
-Batch 4: 0 predicted, 1927.0 actual
-
-Batch 5: 0 predicted, 52598.0 actual
-
-Batch 6: 0 predicted, 20541.0 actual
-
-Batch 7: 0 predicted, 0.0 actual
-
-Batch 8: 0 predicted, 12789.0 actual
-
-Batch 9: 0 predicted, 44966.0 actual
-
-Batch 10: 0 predicted, 0.0 actual
-
-Batch 11: 0 predicted, 31709.0 actual
-
-Batch 12: 0 predicted, 0.0 actual
-
-Batch 13: 0 predicted, 14279.0 actual
-
-Batch 14: 0 predicted, 1659.0 actual
-
-Batch 15: 0 predicted, 0.0 actual
-
-Batch 16: 0 predicted, 0.0 actual
-
-Batch 17: 0 predicted, 204.0 actual
-
-Batch 18: 0 predicted, 39527.0 actual
-
-Batch 19: 0 predicted, 464.0 actual
-
-Batch 20: 0 predicted, 0.0 actual
-
-Batch 21: 0 predicted, 169085.0 actual
-
-Batch 22: 0 predicted, 586.0 actual
-
-Batch 23: 0 predicted, 32353.0 actual
-
-Batch 24: 0 predicted, 4352.0 actual
-
-Batch 25: 0 predicted, 0.0 actual
-
-Batch 26: 0 predicted, 0.0 actual
-
-Batch 27: 0 predicted, 5428.0 actual
-
-Batch 28: 0 predicted, 14350.0 actual
-
-Batch 29: 0 predicted, 434.0 actual
-
-Batch 30: 0 predicted, 462.0 actual
-
-Batch 31: 0 predicted, 13294.0 actual
-
-Batch 32: 0 predicted, 66564.0 actual
-
-Batch 33: 0 predicted, 141.0 actual
-
-Batch 34: 0 predicted, 0.0 actual
-
-Batch 35: 0 predicted, 35516.0 actual
-
-Batch 36: 0 predicted, 0.0 actual
-
-Batch 37: 0 predicted, 167852.0 actual
-
-Batch 38: 0 predicted, 361.0 actual
-
-Batch 39: 0 predicted, 37250.0 actual
-
-Batch 40: 0 predicted, 1850.0 actual
-
-Batch 41: 0 predicted, 663.0 actual
-
-Batch 42: 0 predicted, 0.0 actual
-
-Batch 43: 0 predicted, 0.0 actual
-
-Batch 44: 0 predicted, 0.0 actual
-
-Batch 45: 0 predicted, 0.0 actual
+Saved trained model to lidar_building_model.keras
